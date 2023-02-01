@@ -9,8 +9,7 @@ async def cenz_chek(message: types.message):
             .intersection(set(json.load(open('cenz.json')))) != set():
         await message.reply('маты запрещены')
         await message.delete()
-    if 'Таня' in message.text or 'таня' in message.text:
-        await message.reply('Писька')
+
 
     # await  message.answer(message.text)
     # await  message.reply(message.text)
